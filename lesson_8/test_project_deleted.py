@@ -28,5 +28,5 @@ def test_project_deleted_failed():
         }
     }
 
-    response = requests.put(url, headers=HEADERS, json=payload)
-    assert response.status_code == 201
+    response = requests.post(url, headers=HEADERS, json=payload)
+    assert response.status_code == 404

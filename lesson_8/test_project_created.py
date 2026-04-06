@@ -26,4 +26,4 @@ def test_project_create_failed():
 
     response = requests.post(url, headers=HEADERS, json=payload)
 
-    assert response.status_code == 201
+    assert response.status_code == 404
